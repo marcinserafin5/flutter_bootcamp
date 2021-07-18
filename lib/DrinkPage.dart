@@ -1,5 +1,3 @@
-import 'dart:html';
-
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'dart:async' show Future;
@@ -60,7 +58,6 @@ class _DrinkPageState extends State<DrinkPage> {
 }
 
 Future<String> _loadRemoteIndex() async {
-  final token = 'c3q4f9qad3i8q4a5858g';
   final response = await (http.get(
       Uri.parse('https://www.thecocktaildb.com/api/json/v1/1/random.php')));
 
